@@ -51,3 +51,6 @@ Production data can be found at the GMDSP [QuadStore][quad]
 
 SPARQL endpoint
 ---------------
+The GMDSP [SPARQL endpoint][sp] can be used to query the production datasets.
+
+[sp]: http://data.gmdsp.org.uk/sparql
