@@ -9,5 +9,5 @@ Graphs
 
 For each sample record, a graph has also been produced, utilising [W3 Validation Service][w3]
 
-[w3}: http://www.w3.org/RDF/Validator/
+[w3]: http://www.w3.org/RDF/Validator/
  
