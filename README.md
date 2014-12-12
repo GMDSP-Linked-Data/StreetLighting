@@ -33,12 +33,14 @@ From the five data sources, a total of 174,648 records were modelled.
 
 This resulted in a total of 3,922,426 triples (facts) being published
 
-Dataset		Records	Triples
-Manchester	61,505	1,414,686
-Salford		26,912	 566,315
-Stockport	33,327	 733,166
-Tameside	26,042	 625,028
-Trafford	26,862	 583,231
+| Dataset    | Records | Triples   |
+|------------|---------|-----------|
+| Manchester | 61,505  | 1,414,686 |
+| Salford    | 26,912  | 566,315   |
+| Stockport  | 33,327  | 733,166   |
+| Tameside   | 26,042  | 625,028   |
+| Trafford   | 26,862  | 583,231   |
+| TOTALS     | 174,648 | 3,922,426 |
 
 Live data
 ----------
