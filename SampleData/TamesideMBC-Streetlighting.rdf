@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:gmdsp-assets="http://data.gmdsp.org.uk/def/council/assets/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:locn="http://www.w3.org/ns/locn#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:g50k="http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/"
+	xmlns:gmdsp="http://data.gmdsp.org.uk/def/council/streetlighting/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:osspr="http://data.ordnancesurvey.co.uk/ontology/spatialrelations/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/tameside/streetlighting/tame01">
+	<rdf:type rdf:resource="http://data.gmdsp.org.uk/def/council/streetlighting/Streetlight"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/tameside/streetlighting/location/tame01">
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+	<rdfs:label xml:lang="en">Location of Streetlight: Tame01</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/tameside/streetlighting/address/tame01">
+	<rdf:type rdf:resource="http://www.w3.org/ns/locn#Address"/>
+	<rdfs:label xml:lang="en">Streetlight address: 1 Abbey Gardens, Mottram</rdfs:label>
+	<locn:thoroughfare xml:lang="en">Abbey Gardens</locn:thoroughfare>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ordnancesurvey.co.uk/id/50kGazetteer/167072">
+	<rdf:type rdf:resource="http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/NamedPlace"/>
+	<rdfs:label xml:lang="en">Mottram</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/tameside/streetlighting/address/tame01">
+	<locn:addressArea rdf:resource="http://data.ordnancesurvey.co.uk/id/50kGazetteer/167072"/>
+	<gmdsp:hasPlotNumber>1</gmdsp:hasPlotNumber>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/tameside/streetlighting/location/tame01">
+	<locn:address rdf:resource="http://data.gmdsp.org.uk/id/tameside/streetlighting/address/tame01"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/tameside/streetlighting/geometry/tame01">
+	<rdf:type rdf:resource="http://www.w3.org/ns/locn#Geometry"/>
+	<rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+	<geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">53.453026</geo:lat>
+	<geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.0159382</geo:long>
+	<rdfs:label xml:lang="en">Geometry of Streetlight: Tame01</rdfs:label>
+	<osspr:easting rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">399038.8</osspr:easting>
+	<osspr:northing rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">395140.72</osspr:northing>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/tameside/streetlighting/location/tame01">
+	<locn:geometry rdf:resource="http://data.gmdsp.org.uk/id/tameside/streetlighting/geometry/tame01"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/tameside/streetlighting/tame01">
+	<locn:location rdf:resource="http://data.gmdsp.org.uk/id/tameside/streetlighting/location/tame01"/>
+	<rdfs:label xml:lang="en">Streetlight: Tame01</rdfs:label>
+	<gmdsp-assets:ownedBy rdf:resource="http://opendatacommunities.org/id/metropolitan-district-council/tameside"/>
+	<gmdsp:wattage rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</gmdsp:wattage>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/def/streetlighting/column-type/mild-steel">
+	<rdfs:label xml:lang="en">Mild Steel</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/tameside/streetlighting/tame01">
+	<gmdsp:columnType rdf:resource="http://data.gmdsp.org.uk/def/streetlighting/column-type/mild-steel"/>
+	<gmdsp:columnHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</gmdsp:columnHeight>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/def/streetlighting/lamp-type/hpsodiumtubular">
+	<rdfs:label xml:lang="en">H.P.SODIUM(TUBULAR)</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/tameside/streetlighting/tame01">
+	<gmdsp:lampType rdf:resource="http://data.gmdsp.org.uk/def/streetlighting/lamp-type/hpsodiumtubular"/>
+</rdf:Description>
+
+</rdf:RDF>

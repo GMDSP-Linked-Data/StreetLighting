@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:gmdsp-assets="http://data.gmdsp.org.uk/def/council/assets/"
+	xmlns:gmdsp="http://data.gmdsp.org.uk/def/council/streetlighting/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:osspr="http://data.ordnancesurvey.co.uk/ontology/spatialrelations/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:locn="http://www.w3.org/ns/locn#"
+	xmlns:dcterms="http://purl.org/dc/terms/">
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/stockport/streetlighting/34032">
+	<rdf:type rdf:resource="http://data.gmdsp.org.uk/def/council/streetlighting/Streetlight"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/stockport/streetlighting/location/34032">
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+	<rdfs:label xml:lang="en">Location of Streetlight: 34032</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/stockport/streetlighting/address/38103820-1004">
+	<rdf:type rdf:resource="http://www.w3.org/ns/locn#Address"/>
+	<rdfs:label xml:lang="en">Forty Acre Drive - plot: 1004</rdfs:label>
+	<locn:thoroughfare xml:lang="en">Forty Acre Drive</locn:thoroughfare>
+	<gmdsp:hasPlotNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1004</gmdsp:hasPlotNumber>
+	<gmdsp:hasSiteCode rdf:datatype="http://www.w3.org/2001/XMLSchema#int">38103820</gmdsp:hasSiteCode>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/stockport/streetlighting/location/34032">
+	<locn:address rdf:resource="http://data.gmdsp.org.uk/id/stockport/streetlighting/address/38103820-1004"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/stockport/streetlighting/geometry/34032">
+	<rdf:type rdf:resource="http://www.w3.org/ns/locn#Geometry"/>
+	<rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+	<geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.1361955897038</geo:lat>
+	<geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">53.4256723854417</geo:long>
+	<osspr:easting rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">392105.43</osspr:easting>
+	<osspr:northing rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">391048.17</osspr:northing>
+	<rdfs:label xml:lang="en">Geometry of Streetlight: 34032</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/stockport/streetlighting/location/34032">
+	<locn:geometry rdf:resource="http://data.gmdsp.org.uk/id/stockport/streetlighting/geometry/34032"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/stockport/streetlighting/34032">
+	<locn:location rdf:resource="http://data.gmdsp.org.uk/id/stockport/streetlighting/location/34032"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/def/streetlighting/column-type/stainless-steel">
+	<rdfs:label xml:lang="en">Stainless Steel</rdfs:label>
+</rdf:Description>
+
+</rdf:RDF>

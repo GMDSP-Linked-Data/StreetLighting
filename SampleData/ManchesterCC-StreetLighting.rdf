@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:gmdsp-assets="http://data.gmdsp.org.uk/def/council/assets/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:locn="http://www.w3.org/ns/locn#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:g50k="http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/"
+	xmlns:gmdsp="http://data.gmdsp.org.uk/def/council/streetlighting/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:osspr="http://data.ordnancesurvey.co.uk/ontology/spatialrelations/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:admingeo="http://data.ordnancesurvey.co.uk/ontology/admingeo/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/manchester/streetlighting/114">
+	<rdf:type rdf:resource="http://data.gmdsp.org.uk/def/council/streetlighting/Streetlight"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/manchester/streetlighting/location/114">
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+	<rdfs:label xml:lang="en">Location of Streetlight: 114</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/manchester/streetlighting/address/114">
+	<rdf:type rdf:resource="http://www.w3.org/ns/locn#Address"/>
+	<rdfs:label xml:lang="en">Streetlight address: Streetlight Unit: 0002A at R/O 38/40</rdfs:label>
+	<locn:thoroughfare xml:lang="en">Adrian Street</locn:thoroughfare>
+	<gmdsp:hasPlotNumber>0002A</gmdsp:hasPlotNumber>
+	<dcterms:description xml:lang="en">R/O 38/40</dcterms:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/manchester/streetlighting/location/114">
+	<locn:address rdf:resource="http://data.gmdsp.org.uk/id/manchester/streetlighting/address/114"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/manchester/streetlighting/geometry/114">
+	<rdf:type rdf:resource="http://www.w3.org/ns/locn#Geometry"/>
+	<rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+	<rdfs:label xml:lang="en">Geometry of Streetlight: 114</rdfs:label>
+	<osspr:easting rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">387360.5</osspr:easting>
+	<osspr:northing rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">401163.97</osspr:northing>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/manchester/streetlighting/location/114">
+	<locn:geometry rdf:resource="http://data.gmdsp.org.uk/id/manchester/streetlighting/geometry/114"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/manchester/streetlighting/114">
+	<locn:location rdf:resource="http://data.gmdsp.org.uk/id/manchester/streetlighting/location/114"/>
+	<rdfs:label xml:lang="en">Streetlight: 114</rdfs:label>
+	<gmdsp-assets:ownedBy rdf:resource="http://opendatacommunities.org/id/metropolitan-district-council/manchester"/>
+	<gmdsp:wattage rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</gmdsp:wattage>
+	<gmdsp:columnHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</gmdsp:columnHeight>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/def/streetlighting/lamp-type/70sont">
+	<rdfs:label xml:lang="en">70SONT</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/manchester/streetlighting/114">
+	<gmdsp:lampType rdf:resource="http://data.gmdsp.org.uk/def/streetlighting/lamp-type/70sont"/>
+	<dcterms:alternative xml:lang="en">379</dcterms:alternative>
+	<gmdsp:eligibleSupply rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">1</gmdsp:eligibleSupply>
+</rdf:Description>
+
+</rdf:RDF>

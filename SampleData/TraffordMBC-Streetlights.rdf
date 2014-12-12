@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:gmdsp-assets="http://data.gmdsp.org.uk/def/council/assets/"
+	xmlns:gmdsp="http://data.gmdsp.org.uk/def/council/streetlighting/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:locn="http://www.w3.org/ns/locn#"
+	xmlns:dcterms="http://purl.org/dc/terms/">
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/trafford/streetlighting/40848">
+	<rdf:type rdf:resource="http://data.gmdsp.org.uk/def/council/streetlighting/Streetlight"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/trafford/streetlighting/location/40848">
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+	<rdfs:label xml:lang="en">Location of Streetlight: Col No 5 O/s No 27, Carrsvale Avenue</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/trafford/streetlighting/address/5-carrsvale-avenue">
+	<rdf:type rdf:resource="http://www.w3.org/ns/locn#Address"/>
+	<rdfs:label xml:lang="en">Plot 5 Carrsvale Avenue</rdfs:label>
+	<locn:thoroughfare>Carrsvale Avenue</locn:thoroughfare>
+	<skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#int">41000005</skos:notation>
+	<gmdsp:hasPlotNumber>5</gmdsp:hasPlotNumber>
+	<dcterms:description xml:lang="en">Col No 5 O/s No 27, Carrsvale Avenue</dcterms:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/trafford/streetlighting/location/40848">
+	<locn:address rdf:resource="http://data.gmdsp.org.uk/id/trafford/streetlighting/address/5-carrsvale-avenue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/trafford/streetlighting/geometry/40848">
+	<rdf:type rdf:resource="http://www.w3.org/ns/locn#Geometry"/>
+	<rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+	<geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">53.451557</geo:lat>
+	<geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.362311</geo:long>
+	<easting xmlns="http://data.ordnancesurvey.co.uk/ontology/spatialrelations/" rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">375942</easting>
+	<northing xmlns="http://data.ordnancesurvey.co.uk/ontology/spatialrelations/" rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">395067</northing>
+	<rdfs:label xml:lang="en">Geometry of Streetlight: Col No 5 O/s No 27, Carrsvale Avenue</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/trafford/streetlighting/location/40848">
+	<locn:geometry rdf:resource="http://data.gmdsp.org.uk/id/trafford/streetlighting/geometry/40848"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/trafford/streetlighting/40848">
+	<locn:location rdf:resource="http://data.gmdsp.org.uk/id/trafford/streetlighting/location/40848"/>
+	<rdfs:label>Streetlight (Object number): 0100000000000040848</rdfs:label>
+	<gmdsp-assets:ownedBy rdf:resource="http://opendatacommunities.org/id/metropolitan-district-council/trafford"/>
+	<gmdsp:serviceRoute rdf:datatype="http://www.w3.org/2001/XMLSchema#int">49</gmdsp:serviceRoute>
+</rdf:Description>
+
+
+</rdf:RDF>

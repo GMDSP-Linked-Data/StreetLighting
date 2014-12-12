@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:gmdsp-assets="http://data.gmdsp.org.uk/def/council/assets/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:locn="http://www.w3.org/ns/locn#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:g50k="http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/"
+	xmlns:gmdsp="http://data.gmdsp.org.uk/def/council/streetlighting/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:osspr="http://data.ordnancesurvey.co.uk/ontology/spatialrelations/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:admingeo="http://data.ordnancesurvey.co.uk/ontology/admingeo/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/salford/streetlighting/1">
+	<rdf:type rdf:resource="http://data.gmdsp.org.uk/def/council/streetlighting/Streetlight"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/salford/streetlighting/location/1">
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+	<rdfs:label xml:lang="en">Location of Streetlight: 1</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/salford/streetlighting/address/1">
+	<rdf:type rdf:resource="http://www.w3.org/ns/locn#Address"/>
+	<rdfs:label xml:lang="en">Streetlight address: Streetlight ID 1 on Abbey Drive</rdfs:label>
+	<locn:thoroughfare xml:lang="en">Abbey Drive</locn:thoroughfare>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ordnancesurvey.co.uk/id/50kGazetteer/226557">
+	<rdf:type rdf:resource="http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/NamedPlace"/>
+	<rdfs:label xml:lang="en">Swinton</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/salford/streetlighting/address/1">
+	<locn:addressArea rdf:resource="http://data.ordnancesurvey.co.uk/id/50kGazetteer/226557"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.ordnancesurvey.co.uk/id/7000000000018835">
+	<rdf:type rdf:resource="http://data.ordnancesurvey.co.uk/ontology/admingeo/MetropolitanDistrictWard"/>
+	<rdfs:label xml:lang="en">Swinton North</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/salford/streetlighting/address/1">
+	<admingeo:ward rdf:resource="http://data.ordnancesurvey.co.uk/id/7000000000018835"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/salford/streetlighting/location/1">
+	<locn:address rdf:resource="http://data.gmdsp.org.uk/id/salford/streetlighting/address/1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/salford/streetlighting/1">
+	<locn:location rdf:resource="http://data.gmdsp.org.uk/id/salford/streetlighting/location/1"/>
+	<rdfs:label xml:lang="en">Streetlight: 1</rdfs:label>
+	<gmdsp-assets:ownedBy rdf:resource="http://opendatacommunities.org/id/metropolitan-district-council/salford"/>
+	<gmdsp:wattage rdf:datatype="http://www.w3.org/2001/XMLSchema#int">43</gmdsp:wattage>
+	<gmdsp:columnHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</gmdsp:columnHeight>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/def/streetlighting/lamp-type/led-street-light">
+	<rdfs:label xml:lang="en">LED Street Light</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/salford/streetlighting/1">
+	<gmdsp:lampType rdf:resource="http://data.gmdsp.org.uk/def/streetlighting/lamp-type/led-street-light"/>
+	<dcterms:description xml:lang="en">LED Lighting Column 6m</dcterms:description>
+	<dcterms:alternative xml:lang="en">COL/017/005/0001</dcterms:alternative>
+	<gmdsp:dimmingClassification xml:lang="en">Dimmed to 76%</gmdsp:dimmingClassification>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/def/streetlighting/condition/level-2">
+	<rdfs:label xml:lang="en">Level 2</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/salford/streetlighting/1">
+	<gmdsp:condition rdf:resource="http://data.gmdsp.org.uk/def/streetlighting/condition/level-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/def/streetlighting/lantern-manufacturer/led-roadway-lighting">
+	<rdfs:label xml:lang="en">LED Roadway Lighting</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/salford/streetlighting/1">
+	<gmdsp:lanternManufacturer rdf:resource="http://data.gmdsp.org.uk/def/streetlighting/lantern-manufacturer/led-roadway-lighting"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/def/streetlighting/column-manufacturer/stanton-stavely">
+	<rdfs:label xml:lang="en">Stanton &amp; Stavely</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/salford/streetlighting/1">
+	<gmdsp:columnManufacturer rdf:resource="http://data.gmdsp.org.uk/def/streetlighting/column-manufacturer/stanton-stavely"/>
+	<gmdsp:eligibleSupply rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">1</gmdsp:eligibleSupply>
+</rdf:Description>
+
+</rdf:RDF>
