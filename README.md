@@ -21,7 +21,7 @@ To follow:
 
 
 Streetlighting ontology
-----------------------
+=======================
 The GMDSP Streetlighting ontology is hosted in a [dedicated GMDSP ontologies repostory][ont] 
 
 [ont]: https://github.com/GMDSP-Linked-Data/ontologies
