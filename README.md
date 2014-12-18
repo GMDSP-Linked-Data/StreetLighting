@@ -10,18 +10,19 @@ Contents
 ----------
 This repository contains:
 
+
+- Generic Open Refine model, along with associated XML file/graph
 - Sample RDF XML & Graphs for each local authority
 - Exported Open Refine projects for each local authority
+- Mapping file of source datasets
 
 To follow:
 
-- Mapping file of source datasets
-- An Generic Open Refine model, along with associated XML file/graph
 - Example/useful SPARQL queries
 
 
 Streetlighting ontology
-=======================
+------------------------
 The GMDSP Streetlighting ontology is hosted in a [dedicated GMDSP ontologies repostory][ont] 
 
 [ont]: https://github.com/GMDSP-Linked-Data/ontologies

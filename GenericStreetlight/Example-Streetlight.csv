@@ -1,0 +1,2 @@
+ID,SiteName,Description,PlotNumber,SiteCode,Address 1,Street,Locality,Town,Postcode,Easting,Northing,Latitude,Longitude,Reference,Height,Wattage,Type,Eligible Supply,Dimming,Condition,Manufacturer,Column Manufacturer,Lantern Manufacturer,Service route
+SL-1234-ABC,Example Streetlight,Example Description of Streetlight,1234,ABC,Address 1,Street,Locality,Town,EG1 1EG,111111.1,222222.2,10.00001,-2.0865,1234-ABC,6,70.002,70SONTA,1,70.00%,Level 1,Smiths,Jones,West,3

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:gmdsp-assets="http://data.gmdsp.org.uk/def/council/assets/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:locn="http://www.w3.org/ns/locn#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:g50k="http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/"
+	xmlns:gmdsp="http://data.gmdsp.org.uk/def/council/streetlighting/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:osspr="http://data.ordnancesurvey.co.uk/ontology/spatialrelations/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:admingeo="http://data.ordnancesurvey.co.uk/ontology/admingeo/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/localauthority/streetlighting/sl-1234-abc">
+	<rdf:type rdf:resource="http://data.gmdsp.org.uk/def/council/streetlighting/Streetlight"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/localauthority/streetlighting/location/sl-1234-abc">
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+	<rdfs:label xml:lang="en">Location of Streetlight: SL-1234-ABC</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/localauthority/streetlighting/address/sl-1234-abc">
+	<rdf:type rdf:resource="http://www.w3.org/ns/locn#Address"/>
+	<rdfs:label xml:lang="en">Streetlight address: Example Streetlight</rdfs:label>
+	<locn:thoroughfare xml:lang="en">Address 1</locn:thoroughfare>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/localauthority/streetlighting/town">
+	<rdf:type rdf:resource="http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/NamedPlace"/>
+	<rdfs:label xml:lang="en">Town</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/localauthority/streetlighting/address/sl-1234-abc">
+	<locn:addressArea rdf:resource="http://data.gmdsp.org.uk/id/localauthority/streetlighting/town"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/localauthority/streetlighting/locality">
+	<rdf:type rdf:resource="http://data.ordnancesurvey.co.uk/ontology/admingeo/MetropolitanDistrictWard"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/localauthority/streetlighting/address/sl-1234-abc">
+	<admingeo:ward rdf:resource="http://data.gmdsp.org.uk/id/localauthority/streetlighting/locality"/>
+	<gmdsp:hasPlotNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1234</gmdsp:hasPlotNumber>
+	<gmdsp:hasSiteCode>ABC</gmdsp:hasSiteCode>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/localauthority/streetlighting/location/sl-1234-abc">
+	<locn:address rdf:resource="http://data.gmdsp.org.uk/id/localauthority/streetlighting/address/sl-1234-abc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/localauthority/streetlighting/geometry/sl-1234-abc">
+	<rdf:type rdf:resource="http://www.w3.org/ns/locn#Geometry"/>
+	<rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+	<rdfs:label xml:lang="en">Geometry of Streetlight: SL-1234-ABC</rdfs:label>
+	<osspr:easting rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">111111.1</osspr:easting>
+	<osspr:northing rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">222222.2</osspr:northing>
+	<geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.00001</geo:lat>
+	<geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.0865</geo:long>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/localauthority/streetlighting/location/sl-1234-abc">
+	<locn:geometry rdf:resource="http://data.gmdsp.org.uk/id/localauthority/streetlighting/geometry/sl-1234-abc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/localauthority/streetlighting/sl-1234-abc">
+	<locn:location rdf:resource="http://data.gmdsp.org.uk/id/localauthority/streetlighting/location/sl-1234-abc"/>
+	<rdfs:label xml:lang="en">Streetlight: SL-1234-ABC</rdfs:label>
+	<gmdsp-assets:ownedBy rdf:resource="http://opendatacommunities.org/id/metropolitan-district-council/localauthority"/>
+	<gmdsp:wattage rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70.002</gmdsp:wattage>
+	<gmdsp:columnHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</gmdsp:columnHeight>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/def/streetlighting/lamp-type/70sonta">
+	<rdfs:label xml:lang="en">70SONTA</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/localauthority/streetlighting/sl-1234-abc">
+	<gmdsp:lampType rdf:resource="http://data.gmdsp.org.uk/def/streetlighting/lamp-type/70sonta"/>
+	<dcterms:description xml:lang="en">Example Description of Streetlight</dcterms:description>
+	<dcterms:alternative xml:lang="en">1234-ABC</dcterms:alternative>
+	<gmdsp:dimmingClassification>70.00%</gmdsp:dimmingClassification>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/def/streetlighting/condition/level-1">
+	<rdfs:label xml:lang="en">Level 1</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/localauthority/streetlighting/sl-1234-abc">
+	<gmdsp:condition rdf:resource="http://data.gmdsp.org.uk/def/streetlighting/condition/level-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/def/streetlighting/lantern-manufacturer/west">
+	<rdfs:label xml:lang="en">West</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/localauthority/streetlighting/sl-1234-abc">
+	<gmdsp:lanternManufacturer rdf:resource="http://data.gmdsp.org.uk/def/streetlighting/lantern-manufacturer/west"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/def/streetlighting/column-manufacturer/jones">
+	<rdfs:label xml:lang="en">Jones</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/localauthority/streetlighting/sl-1234-abc">
+	<gmdsp:columnManufacturer rdf:resource="http://data.gmdsp.org.uk/def/streetlighting/column-manufacturer/jones"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/def/streetlighting/manufacturer/smiths">
+	<rdfs:label xml:lang="en">Smiths</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.gmdsp.org.uk/id/localauthority/streetlighting/sl-1234-abc">
+	<gmdsp:manufacturer rdf:resource="http://data.gmdsp.org.uk/def/streetlighting/manufacturer/smiths"/>
+</rdf:Description>
+
+</rdf:RDF>

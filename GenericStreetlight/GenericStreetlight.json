@@ -1,0 +1,508 @@
+[
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://data.gmdsp.org.uk/id/localauthority/streetlighting/",
+      "prefixes": [
+        {
+          "name": "gmdsp-assets",
+          "uri": "http://data.gmdsp.org.uk/def/council/assets/"
+        },
+        {
+          "name": "dc",
+          "uri": "http://purl.org/dc/elements/1.1/"
+        },
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "locn",
+          "uri": "http://www.w3.org/ns/locn#"
+        },
+        {
+          "name": "dcterms",
+          "uri": "http://purl.org/dc/terms/"
+        },
+        {
+          "name": "g50k",
+          "uri": "http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/"
+        },
+        {
+          "name": "gmdsp",
+          "uri": "http://data.gmdsp.org.uk/def/council/streetlighting/"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "osspr",
+          "uri": "http://data.ordnancesurvey.co.uk/ontology/spatialrelations/"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "admingeo",
+          "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/"
+        },
+        {
+          "name": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value.urlify()",
+          "isRowNumberCell": false,
+          "columnName": "ID",
+          "rdfTypes": [
+            {
+              "uri": "http://data.gmdsp.org.uk/def/council/streetlighting/Streetlight",
+              "curie": "gmdsp:Streetlight"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/ns/locn#location",
+              "curie": "locn:location",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "'location/'+value.urlify()",
+                "isRowNumberCell": false,
+                "columnName": "ID",
+                "rdfTypes": [
+                  {
+                    "uri": "http://purl.org/dc/terms/Location",
+                    "curie": "dcterms:Location"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "'Location of Streetlight: '+value",
+                      "isRowNumberCell": false,
+                      "lang": "en",
+                      "columnName": "ID"
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/ns/locn#address",
+                    "curie": "locn:address",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "'address/'+value.urlify()",
+                      "isRowNumberCell": false,
+                      "columnName": "ID",
+                      "rdfTypes": [
+                        {
+                          "uri": "http://www.w3.org/ns/locn#Address",
+                          "curie": "locn:Address"
+                        }
+                      ],
+                      "links": [
+                        {
+                          "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                          "curie": "rdfs:label",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "'Streetlight address: '+value",
+                            "isRowNumberCell": false,
+                            "lang": "en",
+                            "columnName": "SiteName"
+                          }
+                        },
+                        {
+                          "uri": "http://www.w3.org/ns/locn#thoroughfare",
+                          "curie": "locn:thoroughfare",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "value",
+                            "isRowNumberCell": false,
+                            "lang": "en",
+                            "columnName": "Address 1"
+                          }
+                        },
+                        {
+                          "uri": "http://www.w3.org/ns/locn#addressArea",
+                          "curie": "locn:addressArea",
+                          "target": {
+                            "nodeType": "cell-as-resource",
+                            "expression": "value.urlify()",
+                            "isRowNumberCell": false,
+                            "columnName": "Town",
+                            "rdfTypes": [
+                              {
+                                "uri": "http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/NamedPlace",
+                                "curie": "g50k:NamedPlace"
+                              }
+                            ],
+                            "links": [
+                              {
+                                "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                                "curie": "rdfs:label",
+                                "target": {
+                                  "nodeType": "cell-as-literal",
+                                  "expression": "value",
+                                  "isRowNumberCell": false,
+                                  "lang": "en",
+                                  "columnName": "Town"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/ward",
+                          "curie": "admingeo:ward",
+                          "target": {
+                            "nodeType": "cell-as-resource",
+                            "expression": "value.urlify()",
+                            "isRowNumberCell": false,
+                            "columnName": "Locality",
+                            "rdfTypes": [
+                              {
+                                "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/MetropolitanDistrictWard",
+                                "curie": "admingeo:MetropolitanDistrictWard"
+                              }
+                            ],
+                            "links": [
+                              {
+                                "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                                "curie": "rdfs:label",
+                                "target": {
+                                  "nodeType": "cell-as-literal",
+                                  "expression": "value",
+                                  "isRowNumberCell": false,
+                                  "lang": "en",
+                                  "columnName": "Ward"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "uri": "http://data.gmdsp.org.uk/def/council/streetlighting/hasPlotNumber",
+                          "curie": "gmdsp:hasPlotNumber",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "value",
+                            "isRowNumberCell": false,
+                            "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                            "columnName": "PlotNumber"
+                          }
+                        },
+                        {
+                          "uri": "http://data.gmdsp.org.uk/def/council/streetlighting/hasSiteCode",
+                          "curie": "gmdsp:hasSiteCode",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "value",
+                            "isRowNumberCell": false,
+                            "columnName": "SiteCode"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/ns/locn#geometry",
+                    "curie": "locn:geometry",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "'geometry/'+value.urlify()",
+                      "isRowNumberCell": false,
+                      "columnName": "ID",
+                      "rdfTypes": [
+                        {
+                          "uri": "http://www.w3.org/ns/locn#Geometry",
+                          "curie": "locn:Geometry"
+                        },
+                        {
+                          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#Point",
+                          "curie": "geo:Point"
+                        }
+                      ],
+                      "links": [
+                        {
+                          "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                          "curie": "rdfs:label",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "'Geometry of Streetlight: '+value",
+                            "isRowNumberCell": false,
+                            "lang": "en",
+                            "columnName": "ID"
+                          }
+                        },
+                        {
+                          "uri": "http://data.ordnancesurvey.co.uk/ontology/spatialrelations/easting",
+                          "curie": "osspr:easting",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "value",
+                            "isRowNumberCell": false,
+                            "valueType": "http://www.w3.org/2001/XMLSchema#decimal",
+                            "columnName": "Easting"
+                          }
+                        },
+                        {
+                          "uri": "http://data.ordnancesurvey.co.uk/ontology/spatialrelations/northing",
+                          "curie": "osspr:northing",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "value",
+                            "isRowNumberCell": false,
+                            "valueType": "http://www.w3.org/2001/XMLSchema#decimal",
+                            "columnName": "Northing"
+                          }
+                        },
+                        {
+                          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+                          "curie": "geo:lat",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "value",
+                            "isRowNumberCell": false,
+                            "valueType": "http://www.w3.org/2001/XMLSchema#decimal",
+                            "columnName": "Latitude"
+                          }
+                        },
+                        {
+                          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+                          "curie": "geo:long",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "value",
+                            "isRowNumberCell": false,
+                            "valueType": "http://www.w3.org/2001/XMLSchema#decimal",
+                            "columnName": "Longitude"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "'Streetlight: '+value",
+                "isRowNumberCell": false,
+                "lang": "en",
+                "columnName": "ID"
+              }
+            },
+            {
+              "uri": "http://data.gmdsp.org.uk/def/council/assets/ownedBy",
+              "curie": "gmdsp-assets:ownedBy",
+              "target": {
+                "nodeType": "resource",
+                "value": "http://opendatacommunities.org/id/metropolitan-district-council/localauthority",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://data.gmdsp.org.uk/def/council/streetlighting/wattage",
+              "curie": "gmdsp:wattage",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "Wattage"
+              }
+            },
+            {
+              "uri": "http://data.gmdsp.org.uk/def/council/streetlighting/columnHeight",
+              "curie": "gmdsp:columnHeight",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "Height"
+              }
+            },
+            {
+              "uri": "http://data.gmdsp.org.uk/def/council/streetlighting/lampType",
+              "curie": "gmdsp:lampType",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "'http://data.gmdsp.org.uk/def/streetlighting/lamp-type/'+value.urlify()",
+                "isRowNumberCell": false,
+                "columnName": "Type",
+                "rdfTypes": [],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "lang": "en",
+                      "columnName": "Type"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/description",
+              "curie": "dcterms:description",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "lang": "en",
+                "columnName": "Description"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/alternative",
+              "curie": "dcterms:alternative",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "lang": "en",
+                "columnName": "Reference"
+              }
+            },
+            {
+              "uri": "http://data.gmdsp.org.uk/def/council/streetlighting/dimmingClassification",
+              "curie": "gmdsp:dimmingClassification",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Dimming"
+              }
+            },
+            {
+              "uri": "http://data.gmdsp.org.uk/def/council/streetlighting/condition",
+              "curie": "gmdsp:condition",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "'http://data.gmdsp.org.uk/def/streetlighting/condition/'+value.urlify()",
+                "isRowNumberCell": false,
+                "columnName": "Condition",
+                "rdfTypes": [],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "lang": "en",
+                      "columnName": "Condition"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://data.gmdsp.org.uk/def/council/streetlighting/lanternManufacturer",
+              "curie": "gmdsp:lanternManufacturer",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "'http://data.gmdsp.org.uk/def/streetlighting/lantern-manufacturer/'+value.urlify()",
+                "isRowNumberCell": false,
+                "columnName": "Lantern Manufacturer",
+                "rdfTypes": [],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "lang": "en",
+                      "columnName": "Lantern Manufacturer"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://data.gmdsp.org.uk/def/council/streetlighting/columnManufacturer",
+              "curie": "gmdsp:columnManufacturer",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "'http://data.gmdsp.org.uk/def/streetlighting/column-manufacturer/'+value.urlify()",
+                "isRowNumberCell": false,
+                "columnName": "Column Manufacturer",
+                "rdfTypes": [],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "lang": "en",
+                      "columnName": "Column Manufacturer"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://data.gmdsp.org.uk/def/council/streetlighting/manufacturer",
+              "curie": "gmdsp:manufacturer",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "'http://data.gmdsp.org.uk/def/streetlighting/manufacturer/'+value.urlify()",
+                "isRowNumberCell": false,
+                "columnName": "Manufacturer",
+                "rdfTypes": [],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "lang": "en",
+                      "columnName": "Manufacturer"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-literal",
+          "expression": "value",
+          "isRowNumberCell": true
+        }
+      ]
+    }
+  }
+]
