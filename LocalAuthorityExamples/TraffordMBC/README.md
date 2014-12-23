@@ -1,4 +1,4 @@
-Stockport MBC
+Trafford MBC
 ==============
 
 Output of a single streetlight record, saved as [RDF/XML][rdfxml].

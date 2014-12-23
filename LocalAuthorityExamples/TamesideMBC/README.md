@@ -1,9 +1,9 @@
-Stockport MBC
+Tameside MBC
 ==============
 
 Output of a single streetlight record, saved as [RDF/XML][rdfxml].
 
-[rdfxml]:https://github.com/GMDSP-Linked-Data/StreetLighting/blob/master/LocalAuthorityExamples/TamesideMBC/TamesideMBC-Streetlight.rdf
+[rdfxml]:https://github.com/GMDSP-Linked-Data/StreetLighting/blob/master/LocalAuthorityExamples/TamesideMBC/TamesideMBC-Streetlighting.rdf
 
 Graph
 ===============
@@ -20,7 +20,7 @@ Open Refine Model
 
 An export of the [Open Refine project][orp].
 
-[orp]:https://github.com/GMDSP-Linked-Data/StreetLighting/raw/master/LocalAuthorityExamples/TamesideMBC/TamesideMBC-Streetlight.google-refine.tar.gz
+[orp]:https://github.com/GMDSP-Linked-Data/StreetLighting/raw/master/LocalAuthorityExamples/TamesideMBC/TamesideMBC-Streetlighting.google-refine.tar.gz
 
 This requires [Open Refine][or] and the [RDF plug-in][rdf].
  
