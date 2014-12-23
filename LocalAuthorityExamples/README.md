@@ -50,7 +50,7 @@ Stockport
 
 Tameside
 --------------
-* Open data portal: www.tameside.gov.uk/opendata
+* Open data portal: http://www.tameside.gov.uk/opendata
 * Streetlight data: not available
 * DataGM: not listed
 
