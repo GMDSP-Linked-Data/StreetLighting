@@ -50,7 +50,7 @@ Stockport
 
 Tameside
 --------------
-* Open data portal: http://www.tameside.gov.uk/opendata
+* Open data portal: www.tameside.gov.uk/opendata
 * Streetlight data: not available
 * DataGM: not listed
 
@@ -59,12 +59,6 @@ Trafford
 * Open data portal: http://www.trafford.gov.uk/about-your-council/data-protection/open-data/open-data.aspx
 * Streetlight data: http://www.infotrafford.org.uk/custom/resources/streetlights_from_GIS_Lat_Lng.csv (CSV file - labelled as XML)
 * DataGM: http://datagm.org.uk/dataset/trafford-council-streetlights (404 link, as XML file is not active)
-
-
-Source datasets transformed using [Open Refine][or] and [RDF plugin][ordf]
-
-[or]: http://openrefine.org/
-[ordf]: http://refine.deri.ie/
 
 
 Data comparison
