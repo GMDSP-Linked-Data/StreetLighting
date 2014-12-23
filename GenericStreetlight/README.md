@@ -20,6 +20,16 @@ The [gmdsp:Streetlighting ontology][gmdsp] is also deployed:
 
 [gmdsp]: https://github.com/GMDSP-Linked-Data/ontologies/blob/1f4d3249af5f40282a1d905d4fe07556de338443/streetlight/streetlight-ontology-rdfs.ttl
 
+Graph
+---------
+
+A graph of the sample record, produced with the [W3 Validation Service][w3]
+
+[w3]: http://www.w3.org/RDF/Validator/
+
+![Graph](https://raw.githubusercontent.com/GMDSP-Linked-Data/StreetLighting/master/GenericStreetlight/GenericStreetlight-graph.png)
+
+
 Contents
 --------
 The package consists of:
