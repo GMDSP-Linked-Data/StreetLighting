@@ -1,11 +1,13 @@
-Refine models
-==============
+Local authority examples
+=========================
 
 Data Overview
 ==============
 All five local authorities have provided streetlighting data.
 
-These datasets have now been modelled to RDF in a consistent approach, and can be found on the live GDMSP datastore: http://gmdsp-staging.publishmydata.com/themes/street-lighting
+These datasets have been modelled to RDF in a consistent approach, and can be found on the [live GDMSP datastore][livegmdsp]
+
+[livegmdsp]: http://data.gmdsp.org.uk/themes/street-lighting
 
 Data summary (12 Dec 2014)
 ---------------------------
