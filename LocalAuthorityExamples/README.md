@@ -7,7 +7,6 @@ All five local authorities have provided streetlighting data.
 
 These datasets have now been modelled to RDF in a consistent approach, and can be found on the live GDMSP datastore: http://gmdsp-staging.publishmydata.com/themes/street-lighting
 
-
 Data summary (12 Dec 2014)
 ---------------------------
 From the five data sources, a total of 174,648 records were modelled.

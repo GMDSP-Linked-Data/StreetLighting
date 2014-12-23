@@ -1,9 +1,5 @@
-Example Place / Thing model
-===========================
-
-Status: testing 
----------------
-Last update: 18th December 2014
+Generic Streetlighting model
+==============================
 
 Overview
 --------
@@ -14,16 +10,15 @@ Use case
 --------
 This could be applied to any streetlight dataset.
 
-
 Ontologies
 ----------
-This work utilise the ISA Programme Location Core Vocabulary (locn) to describe the location/address/geometry) of the Thing.
+This work utilises the [ISA Programme Location Core Vocabulary] [locn] (locn) to describe the location/address/geometry) of the Thing.
 
-http://www.w3.org/ns/locn.html
+[locn]: http://www.w3.org/ns/locn.html
 
-The gmdsp:Streetlighting ontology is also deployed:
+The [gmdsp:Streetlighting ontology][gmdsp] is also deployed:
 
-https://github.com/GMDSP-Linked-Data/ontologies/blob/1f4d3249af5f40282a1d905d4fe07556de338443/streetlight/streetlight-ontology-rdfs.ttl
+[gmdsp]: https://github.com/GMDSP-Linked-Data/ontologies/blob/1f4d3249af5f40282a1d905d4fe07556de338443/streetlight/streetlight-ontology-rdfs.ttl
 
 Contents
 --------
