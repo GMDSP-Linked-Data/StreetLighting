@@ -68,7 +68,13 @@ Source datasets transformed using [Open Refine][or] and [RDF plugin][ordf]
 
 Data comparison
 =================
-The data supplied by local authorities has been mapped against the broad structure of a "GMDSP Streetlight".  This involves describing each Streetlight uniquely, alongside subsequent locative
+The data supplied by local authorities has been mapped against the broad structure of a "GMDSP Streetlight".  
+
+This involves describing each Streetlight uniquely, alongside subsequent locative and specific facets.
+
+This data is also available as a [Google spreadsheet][gss]
+
+[gss]: https://docs.google.com/spreadsheets/d/1fWb-tCd-KUFJB5aCKsRZWjTmpmJ8VHcxbQkD7dTzMiw/edit?usp=sharing
 
 | Subject     | Mapping                     | Manchester     | Salford                | Stockport        | Tameside             | Trafford    |   | Links to                                             |
 |-------------|-----------------------------|----------------|------------------------|------------------|----------------------|-------------|---|------------------------------------------------------|
